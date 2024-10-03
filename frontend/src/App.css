@@ -1,0 +1,89 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 200px; /* Fixed width for sidebar */
+  background-color: #282c34; /* Dark background to match app header */
+  padding: 20px;
+  border-right: 2px solid #61dafb; /* Distinct border to separate from main content */
+  position: fixed; /* Fixed position to keep it visible on scroll */
+  height: 100vh; /* Full height to match viewport */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  color: white; /* White text for better contrast */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: #61dafb; /* Link color to match the theme */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px; /* Padding for clickable area */
+  display: block; /* Make the entire area clickable */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(97, 218, 251, 0.2); /* Highlight effect on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 250px; /* Add margin equal to sidebar width */
+  padding: 20px;
+}
+
+/* Task List Container */
+.task-list-container {
+  padding: 10px;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-counts {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.task-checkbox {
+  margin-left: 10px;
+}
+
+.child-tasks {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+/* App Layout */
+.App {
+  display: flex;
+  height: 100vh; /* Ensure the App takes full height */
+}
+
+.content {
+  margin-left: 250px; /* Adjust this to accommodate the sidebar */
+  padding: 20px;
+}
